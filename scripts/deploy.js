@@ -1,4 +1,3 @@
-
 const { ethers } = require("hardhat");
 
 async function main() {
@@ -10,8 +9,7 @@ async function main() {
 
   // here we deploy the contract
   const deployedContract = await ourContract.deploy(10);
-  // 10 is the Maximum number of whitelisted addresses allowed ie our constructor
-
+  // 10 is the Maximum number of whitelisted addresses allowed in our constructor
   // Wait for it to finish deploying
   await deployedContract.deployed();
 

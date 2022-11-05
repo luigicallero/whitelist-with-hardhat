@@ -1,9 +1,9 @@
-require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-waffle")
 require("dotenv").config({ path: ".env" });
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.ALCHEMY_API_KEY_URL;
 
-const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const PRIVATE_KEY = process.env.GOERLI_PRIVATE_KEY;
 
 module.exports = {
   solidity: "0.8.0",
